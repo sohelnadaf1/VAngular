@@ -1,0 +1,13 @@
+<!-- applying more than one class  -->
+<h2 [class]="applystyle">sohel nadaf</h2>
+
+<!-- this style will replace old class and add new classess  -->
+<h2 class="fontColor" [class]="applystyle">hello brother</h2>
+
+<!-- anothr method of adding class / -->
+
+<h2 [class.applyItalic]="applyItalic">hello safia</h2>
+
+<!-- if we want to add 2 class secperatly we can use ngclass  -->
+
+<h2 class="fontColor" [ngClass]="addClass()">hello jasmin</h2>
