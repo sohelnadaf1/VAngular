@@ -8,6 +8,7 @@ import { BindingComponent } from './student/bindingData/binding.component';
 import { ClassBind } from './classbinding/cbind.component';
 import { StyleBindComponent } from './style-bind/style-bind.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { NgforDirComponent } from './ngfor-dir/ngfor-dir.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     ClassBind,
     StyleBindComponent,
     EventBindingComponent,
+    NgforDirComponent,
   ],
   imports: [
     BrowserModule,

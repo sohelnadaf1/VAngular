@@ -1,0 +1,20 @@
+<p>ngfor-dir works!</p>
+
+<table>
+    <thead>
+        <tr>
+            <td>name</td>
+            <td>age</td>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employees">
+            <td>{{emp.name}}</td>
+            <td>{{emp.age}}</td>
+        </tr>
+        <tr *ngIf="!employees || employees.length == 0">
+           <td>data not found</td> 
+        </tr>
+    </tbody>
+</table>
