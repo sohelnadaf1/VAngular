@@ -1,0 +1,10 @@
+table{
+    border: 4px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-style: italic;
+}
+
+td{
+    border: 2px solid red;
+}
