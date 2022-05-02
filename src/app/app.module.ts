@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { StudentComponent } from './student/student.component';
+import { BindingComponent } from './student/bindingData/binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentComponent
+    StudentComponent,
+    BindingComponent,
   ],
   imports: [
     BrowserModule

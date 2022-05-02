@@ -1,0 +1,13 @@
+<!-- 
+binding image 
+this is interpolation {{}}  -->
+<div>
+    <img src="{{image}}" height="300px">
+</div>
+
+<!-- event binding  -->
+<button (click)='clickme()'>show image</button>
+
+<div>
+    <img [src]='Propimg' height="300px">
+</div>
