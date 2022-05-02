@@ -1,3 +1,5 @@
+<p>event-binding works!</p>
+
 <table>
     <tr>
         <td>name</td>
@@ -7,11 +9,11 @@
         <td>age</td>
         <td>{{age}}</td>
     </tr>
-    <tr>
+    <tr *ngIf='showDetails'>
         <td>location</td>
         <td>{{location}}</td>
     </tr>
 </table>
 
-<input type="text" [(ngModel)]="getname">
-{{getname}}
+<!-- <button (click)="showData()">show Data</button>  -->
+<button (click)="showData()">{{showDetails ? 'hide':'show'}} Data</button>

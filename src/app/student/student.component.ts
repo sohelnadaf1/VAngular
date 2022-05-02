@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 
+
 @Component({
     selector:'app-student',
     templateUrl:'./student.component.html',
@@ -11,4 +12,5 @@ export class StudentComponent
     name:string = "sohel";
     age:number = 23;
     location : string = "solapur"
+    getname:string = ""
 }
