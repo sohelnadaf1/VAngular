@@ -9,6 +9,9 @@ import { ClassBind } from './classbinding/cbind.component';
 import { StyleBindComponent } from './style-bind/style-bind.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { NgforDirComponent } from './ngfor-dir/ngfor-dir.component';
+import { PipesdemoComponent } from './pipesdemo/pipesdemo.component';
+import { CustompipePipe } from './custompipe.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +21,9 @@ import { NgforDirComponent } from './ngfor-dir/ngfor-dir.component';
     StyleBindComponent,
     EventBindingComponent,
     NgforDirComponent,
+    PipesdemoComponent,
+    CustompipePipe,
+    
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,22 @@
+<p>pipesdemo works!</p>
+
+<table >
+    <thead>
+        <tr class="headme">
+            <td>name</td>
+            <td>age</td>
+            <td>salary</td>
+            <td>DOJ</td>
+        </tr>
+    </thead>
+    <tbody class="tbody">
+        <tr *ngFor="let emp of employee">
+            <td>{{emp.name | uppercase }}</td>
+            <td>{{emp.age}}</td>
+            <td>{{emp.salary | currency:'USD':true}}</td>
+            <td>{{emp.DOJ | date:'fullDate'}}</td>
+        </tr>
+    </tbody>
+</table>
+
+{{amount | cust}}
