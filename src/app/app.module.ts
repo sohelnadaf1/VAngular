@@ -10,8 +10,11 @@ import { StyleBindComponent } from './style-bind/style-bind.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { NgforDirComponent } from './ngfor-dir/ngfor-dir.component';
 import { PipesdemoComponent } from './pipesdemo/pipesdemo.component';
-import { CustompipePipe } from './custompipe.pipe';
-
+import { CustompipePipe } from './pipesdemo/custompipe.pipe';
+import { SalaryupdatePipe } from './pipesdemo/salaryupdate.pipe';
+import { GendercheckPipe } from './pipesdemo/gendercheck.pipe';
+import { NestedcomponentComponent } from './nestedcomponent/nestedcomponent.component';
+import { CountComponent } from './nestedcomponent/count/count.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +26,11 @@ import { CustompipePipe } from './custompipe.pipe';
     NgforDirComponent,
     PipesdemoComponent,
     CustompipePipe,
+    SalaryupdatePipe,
+    GendercheckPipe,
+    NestedcomponentComponent,
+    CountComponent,
+    
     
   ],
   imports: [

@@ -1,0 +1,40 @@
+<div>
+  <!-- nested component  -->
+  <app-count
+    [all]="allECount()"
+    [male]="allMaleCount()"
+    [female]="allfemaleCount()"
+    (ButtonEventEmitter)="updateButtonClickValue($event)"
+  ></app-count>
+</div>
+<br />
+
+<!-- main component 
+root component -->
+
+<table>
+  <thead>
+    <tr class="headme">
+      <td>name</td>
+      <td>gender</td>
+      <td>age</td>
+
+      <td>salary</td>
+      <td>Load eligibility</td>
+      <td>DOJ</td>
+    </tr>
+  </thead>
+  <tbody class="tbody">
+    <ng-container *ngFor="let emp of employee">
+    <tr *ngIf="buttonvalue === 'All' || buttonvalue === emp.gender">
+      <td>{{ emp.name | gch: emp.gender }}</td>
+      <td>{{ emp.gender }}</td>
+      <td>{{ emp.age }}</td>
+      <td>{{ emp.salary | currency: "USD":true }}</td>
+      <td>{{ emp.salary | salaryupdate }}</td>
+
+      <td>{{ emp.DOJ | date: "fullDate" }}</td>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>

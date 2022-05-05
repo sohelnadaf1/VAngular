@@ -1,0 +1,11 @@
+<span class="radiosection">
+    VIEW :  
+</span>
+<input type="radio" name="counts" value="All" [(ngModel)]="onButtonValue" (change)="UpdateButtonValue()">
+<span class="radiosection">All:({{all}})</span>
+
+<input type="radio" name="counts" value="Male" [(ngModel)]="onButtonValue" (change)="UpdateButtonValue()">
+<span class="radiosection" >MALE : ({{male}})</span>
+
+<input type="radio" name="counts" value="Female" [(ngModel)]="onButtonValue" (change)="UpdateButtonValue()">
+<span class="radiosection">FEMALE : ({{female}})</span>
