@@ -15,6 +15,7 @@ import { SalaryupdatePipe } from './pipesdemo/salaryupdate.pipe';
 import { GendercheckPipe } from './pipesdemo/gendercheck.pipe';
 import { NestedcomponentComponent } from './nestedcomponent/nestedcomponent.component';
 import { CountComponent } from './nestedcomponent/count/count.component';
+import { ServicesCompComponent } from './services-comp/services-comp.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { CountComponent } from './nestedcomponent/count/count.component';
     GendercheckPipe,
     NestedcomponentComponent,
     CountComponent,
+    ServicesCompComponent,
     
     
   ],
